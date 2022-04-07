@@ -4,7 +4,7 @@ import com.sun.jmx.snmp.Timestamp;
 
 public class ProductListVO {
 
-	private int product_number;
+	private int product_idx;
 	private String product_title;
 	private String product_img;
 	private String product_price;
@@ -14,12 +14,11 @@ public class ProductListVO {
 	private String product_description;
 	private Timestamp product_rgstdate;
 	private Timestamp product_mdfydate;
-	
-	public int getProduct_number() {
-		return product_number;
+	public int getProduct_idx() {
+		return product_idx;
 	}
-	public void setProduct_number(int product_number) {
-		this.product_number = product_number;
+	public void setProduct_idx(int product_idx) {
+		this.product_idx = product_idx;
 	}
 	public String getProduct_title() {
 		return product_title;
@@ -78,7 +77,7 @@ public class ProductListVO {
 	
 	@Override
 	public String toString() {
-		return "ProductListVO [product_number=" + product_number + ", product_title=" + product_title + ", product_img="
+		return "ProductListVO [product_idx=" + product_idx + ", product_title=" + product_title + ", product_img="
 				+ product_img + ", product_price=" + product_price + ", product_category=" + product_category
 				+ ", product_tag=" + product_tag + ", product_like=" + product_like + ", product_description="
 				+ product_description + ", product_rgstdate=" + product_rgstdate + ", product_mdfydate="

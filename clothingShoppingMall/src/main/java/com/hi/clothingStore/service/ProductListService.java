@@ -186,6 +186,7 @@ public class ProductListService {
 		List<String> categoryList = productlistDAO.selectCategoryList();
 		int funcCount = productlistDAO.funcCount(paramMap);
 		
+
 		int lastPage = (int)Math.ceil((double)funcCount/rowPerPage);
 		
 		
@@ -200,7 +201,18 @@ public class ProductListService {
 		}
 		
 		
+
+	
 		
+		/*
+		 * if(categoryName!= null) { endIdx=funcCount%20; }
+		 */
+		 
+		
+		
+		
+		
+
 		System.out.println("Service의 funcCount:"+funcCount);
 		System.out.println("Service의 list:"+list);
 		System.out.println("Service의 categoryList:"+categoryList);

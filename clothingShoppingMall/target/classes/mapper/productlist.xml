@@ -45,6 +45,11 @@
 	 </select> 
 
 
+
+
+
+
+
 	<select id = "selectCategoryList" resultType = "String">
 	  select distinct product_category from product  
 	</select>

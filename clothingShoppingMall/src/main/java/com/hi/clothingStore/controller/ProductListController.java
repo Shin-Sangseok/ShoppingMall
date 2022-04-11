@@ -65,6 +65,7 @@ public class ProductListController {
 								  @RequestParam(value = "rowPerPage", defaultValue = "20",required = false) int rowPerPage,
 								  @RequestParam(value="categoryName", required = false)String categoryName,
 								  @RequestParam(value="searchWord", required = false) String searchWord
+
 			
 																														) {
 		
@@ -72,6 +73,7 @@ public class ProductListController {
 		//★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 		//노드에 쓰레기값 들어있으면 다음 페이지 이미지 나오지 않으므로 꼭 넣어줄 것.
 		
+
 		if(categoryName!= null && categoryName.equals("")) {
 			categoryName = null;
 		}
@@ -82,7 +84,7 @@ public class ProductListController {
 		
 		//★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 		
-		
+
 		System.out.println("Controller productList의 rowPerPage"+searchWord);
 		System.out.println("Controller productList의 productCategory"+categoryName);
 		System.out.println("Controller productList의 currentPage"+currentPage);

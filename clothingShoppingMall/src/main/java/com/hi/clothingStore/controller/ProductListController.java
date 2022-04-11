@@ -64,11 +64,13 @@ public class ProductListController {
 								 // @RequestParam(value="endPage",defaultValue = "1",required = false)int endPage,
 								  @RequestParam(value = "rowPerPage", defaultValue = "20",required = false) int rowPerPage,
 								  @RequestParam(value="categoryName", required = false)String categoryName
+
 								  
 			
 			
 																														) {
 		
+
 		
 		if(categoryName != null && categoryName.equals("")) {
 			categoryName = null; 
@@ -78,6 +80,7 @@ public class ProductListController {
 		System.out.println("Controller productList의 currentPage"+currentPage);
 		System.out.println("Controller productList의 rowPerPage"+rowPerPage);
 		
+
 		Map<String,Object> map = productListService.getProductList(currentPage, rowPerPage, categoryName);
 		
 		model.addAttribute("currentPage", currentPage); 
@@ -87,6 +90,7 @@ public class ProductListController {
 		model.addAttribute("endIdx",map.get("endIdx")); 
 		model.addAttribute("list", map.get("list")); 
 		model.addAttribute("categoryList", map.get("categoryList")); 
+
 		
 		return "productList";
 		

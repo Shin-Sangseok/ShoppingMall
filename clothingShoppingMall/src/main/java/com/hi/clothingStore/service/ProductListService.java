@@ -19,6 +19,7 @@ public class ProductListService {
 	
 	//상품 리스트 서비스 
 	public Map<String, Object> getProductList(int currentPage, int rowPerPage, String categoryName){
+
 		
 	
 		
@@ -129,12 +130,14 @@ public class ProductListService {
 		paramMap.put("beginRow",beginRow);
 		paramMap.put("rowPerPage",rowPerPage);
 		paramMap.put("categoryName",categoryName); 
+
 		
 		
 		
 		
 		
 		
+
 		//dao 호출 
 		List<Map<String,Object>> list = productlistDAO.all(paramMap);
 		List<String> categoryList = productlistDAO.selectCategoryList(); 

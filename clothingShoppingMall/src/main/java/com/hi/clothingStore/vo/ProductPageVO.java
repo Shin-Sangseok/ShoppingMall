@@ -2,10 +2,12 @@ package com.hi.clothingStore.vo;
 
 public class ProductPageVO {
 
-	private int rowPerPage; //페이지당 행의 수 
-	private int beginRow;  //시작 행
-	private String product_category;  //카테고리 추가 
+
+	private int rowPerPage;
+	private int beginRow; 
+	private String product_category; 
 	
+
 	public int getRowPerPage() {
 		return rowPerPage;
 	}

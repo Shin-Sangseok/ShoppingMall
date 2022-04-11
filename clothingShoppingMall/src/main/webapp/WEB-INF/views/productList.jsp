@@ -10,12 +10,12 @@
 <!-- <link rel="stylesheet" type="text/css" href="resources/css/project.css"> -->
 </head>
 <script type="text/javascript" src="resources/js/jquery-3.4.1.js">
-	$(document).ready(function(){
+/* 	$(document).ready(function(){
 			$('#btn').click(function(){
 					$('#productForm').submit();
 			});
 	});
-
+ */
 
 </script>
 <style>
@@ -42,10 +42,6 @@
  <div id = "top">
 		<jsp:include page="../../top.jsp"></jsp:include>
 </div>
-
-
-
-
 
 <!-- 값을 넘겨줘야 하므로 form을 만들자 -->
 <form id = "productForm" action="${pageContext.request.contextPath}/productList" method ="get">
@@ -102,7 +98,7 @@ product_category:
 
 
 
-  <button id="btn" type="button">검색</button>
+  <button id="btn" type="submit">검색</button>
 </form>
 
 <table border="1"> 

@@ -11,13 +11,14 @@ public class ProductListVO {
 	private String product_price;
 	
 	private String product_category; 
-	//ÆÒÃ÷, °¡µğ°Ç&Ç®¿À¹ö, µ¥´Ô/Áø, µå·¹½º, ¸ÇÅõ¸Ç&ÈÄµğ, ºí·¹ÀÌÀú, ¼ÅÃ÷&ºí¶ó¿ì½º, ¼îÃ÷, ½ºÄ¿Æ® , ÀçÅ¶&ÄÚÆ® , Å¾&Æ¼¼ÅÃ÷ 
+	//íŒ¬ì¸ , ê°€ë””ê±´&í’€ì˜¤ë²„, ë°ë‹˜/ì§„, ë“œë ˆìŠ¤ , ë§¨íˆ¬ë§¨&í›„ë”” 
+	//ë¸”ë ˆì´ì €, ì…”ì¸ &ë¸”ë¼ìš°ìŠ¤ , ì‡¼ì¸ , ìŠ¤ì»¤íŠ¸, ì¬í‚·&ì½”íŠ¸, íƒ‘&í‹°ì…”ì¸  
 	
 	private String product_tag;
 	private String product_like;
 	private String product_description;
-	private String product_rgstdate;          //timestamp Àû¿ë ½Ã ¾È ³Ñ¾î °¡´Â °æ¿ì ÀÖÀ½. stringÀ¸·Î º¯°æ 
-	private String product_mdfydate;	      //timestmap Àû¿ë ½Ã ¾È³Ñ¾î °¡´Â °æ¿ì ÀÖÀ½ stringÀ¸·Î º¯°æ
+	private String product_rgstdate;          //timestamp ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ñ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. stringï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+	private String product_mdfydate;	      //timestmap ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½È³Ñ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ stringï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
 	
 	public int getProduct_idx() {

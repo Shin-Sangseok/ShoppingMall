@@ -2,11 +2,10 @@ package com.hi.clothingStore.vo;
 
 public class ProductPageVO {
 
-	private int rowPerPage; //ÆäÀÌÁö´ç ÇàÀÇ ¼ö 
-	private int beginRow; //½ÃÀÛÇà
-	//private int startPage; //
-	//private int endPage; //
-  
+	private int rowPerPage; //í˜ì´ì§€ë‹¹ í–‰ì˜ ìˆ˜ 
+	private int beginRow;  //ì‹œì‘ í–‰
+	private String product_category;  //ì¹´í…Œê³ ë¦¬ ì¶”ê°€ 
+	
 	public int getRowPerPage() {
 		return rowPerPage;
 	}
@@ -19,11 +18,18 @@ public class ProductPageVO {
 	public void setBeginRow(int beginRow) {
 		this.beginRow = beginRow;
 	}
-	@Override
-	public String toString() {
-		return "ProductPageVO [rowPerPage=" + rowPerPage + ", beginRow=" + beginRow + "]";
+	public String getProduct_category() {
+		return product_category;
+	}
+	public void setProduct_category(String product_category) {
+		this.product_category = product_category;
 	}
 	
+	@Override
+	public String toString() {
+		return "ProductPageVO [rowPerPage=" + rowPerPage + ", beginRow=" + beginRow + ", product_category="
+				+ product_category + "]";
+	}
 	
 	
 }

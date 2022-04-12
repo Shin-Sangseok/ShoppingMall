@@ -98,7 +98,9 @@ $('#deleteBtn').click(function() {
 		    </div>
      	 <div>
 	      	 <a href="productInsert"><button>상품 생성</button></a>
+
 			 <a href="productUp?product_idx=${one.product_idx}"><button>상품 내용 수정</button></a>
+
 			 <button id="deleteBtn">상품 삭제</button>
       	 </div>
       	 	<!-- -------------------------------------------- -->

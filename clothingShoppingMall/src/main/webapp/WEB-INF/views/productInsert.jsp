@@ -87,6 +87,7 @@ $(document).ready(function(){
 				
 				
 				<!-- 카테고리명 지정된 영역 내에서 선택 할 수 있게 변경 -->
+
 				<!-- product_category :<input type="text" class="form-control" name="product_category" id="product_category" /><br> -->
 				
 				product_category : 
@@ -106,9 +107,7 @@ $(document).ready(function(){
 							</select>
 				
 					<br><br>
-				<!-- //카테고리 내용 	
-			    //팬츠, 드레스, 맨투맨&후디, 블레이저, 
-		  		//셔츠&블라우스, 쇼츠, 스커트 , 재킷&코트 , 탑&티셔츠   -->
+
 				
 				<!-- product_like:<input type="text" class="form-control" name="product_like"id="product_like" pattern="[0-9]+" value=0/><p>숫자로 입력</p><br> -->
 				product_description:<input type="text" class="form-control"name="product_description" id="product_description"/><br>

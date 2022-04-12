@@ -70,10 +70,6 @@ public class ProductListController {
 																														) {
 		
 		
-		//categoryName이 처음 페이지가 열린 때는 null 상태임. 
-		//categoryName 선택 이후 다시 상품 전체 목록으로 들어갈때는 
-		//""상태 
-		//좌측만 지웠을때는 NullPointerException이 발생.
 		//카테고리나 검색 이동 후 전체 상품목록으로 이동하는데 필요한 코드. 
 		
 		System.out.println("productListController의 categoryName 전"+ categoryName);		
@@ -85,7 +81,6 @@ public class ProductListController {
 		if(searchWord!= null && searchWord.equals("")) {
 			searchWord = null;
 		}
-		
 		
 		System.out.println("productListController의 categoryName 후"+ categoryName);		
 

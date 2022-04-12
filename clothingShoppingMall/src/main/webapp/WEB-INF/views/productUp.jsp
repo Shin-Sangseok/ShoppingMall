@@ -97,11 +97,13 @@ input:invalid{
 				
 				<!-- 카테고리 지정된 영역 내에서 변경할 수 있게 변경 -->
 				
+
 				<%-- <div class="form-group">
 					<label for="content">product_category:</label> 					
 					<textarea rows="5" cols="5" class="form-control" name="product_category" id="product_category"
 						style="background: white-space;color: green; font-weight: bold;"
 					>${one.product_category}</textarea>
+
 				</div> --%>
 				
 			<div>
@@ -121,6 +123,7 @@ input:invalid{
 								<option value = "팬츠">팬츠</option>
 							</select>
 			</div>
+
 				
 				<div class="form-group">
 					<label for="content">product_description:</label> 					

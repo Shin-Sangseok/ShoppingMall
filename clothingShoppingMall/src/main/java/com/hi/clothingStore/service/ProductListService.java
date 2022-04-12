@@ -30,7 +30,8 @@ public class ProductListService {
 		  //셔츠&블라우스, 쇼츠, 스커트 , 재킷&코트 , 탑&티셔츠  
 		
 		int productListTotal = productlistDAO.productListCount();
-		
+
+
 		System.out.println("========productListTotal:"+productListTotal);
 		//Math.ceil() 입력받은 숫자보다 크거나 같은 정수 중 가장 적은 정수를 리턴 
 		//Math.floor() 소수점 버림. 정수반환 

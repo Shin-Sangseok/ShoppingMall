@@ -40,6 +40,20 @@ public class LikeDAO {
 	}
 	
 	
+	//좋아요 누른 정보 삭제 
+	public int deleteMemberLike(LikeVO vo) {
+		System.out.println("deleteMemberLike vo"+vo);
+		return my.delete("productlike.deleteMemberLike", vo); 
+	}
+	
+	//상품인덱스에 따른 좋아요 
+	public List<Map<String, Object>> ProductIdxByLike() {
+		return my.selectList("productlike.productIdxByLike"); 
+	}
+	
+	
+	
+	
 	
 	
 	

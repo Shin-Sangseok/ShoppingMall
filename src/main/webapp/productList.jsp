@@ -23,6 +23,34 @@
 		
 		})
 	}) 
+	
+	 /*  $(function(){
+		//alert('test..')
+		$.ajax({
+			url : "productList", 
+			success: function(result){ //views/list.jsp의 결과 
+				$('#d2').html(result)//결과가 담겨진 table
+			},
+			error: function() {
+				alert('실패')
+			}
+		
+		})
+	})   */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </script>
 <div id = "total">
 	<%-- <div id = "top">
@@ -30,6 +58,7 @@
 	</div> --%>
 	<div>
 		<div id="d1"></div>
+		<div id="d2"></div>
 	</div>
 </div>
 </body>

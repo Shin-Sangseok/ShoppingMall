@@ -1,5 +1,6 @@
 package com.hi.clothingStore.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -25,6 +26,7 @@ public class LikeDAO {
 	//상품별 좋아요 수 갱신 메서드. 
 	public List<Map<String, Object>> SumProductLike(ProductPageVO vo) {
 		return my.selectList("productlike.SumProductLike", vo);
+
 	}
 	
 	//회원이 하트 버튼 클릭했을 때 메서드 
@@ -37,6 +39,7 @@ public class LikeDAO {
 	public LikeVO selectOneLike(LikeVO vo) {
 		System.out.println("selectOneLike vo"+vo);
 		return my.selectOne("productlike.selectOneLike", vo); 
+
 	}
 	
 	
@@ -49,6 +52,7 @@ public class LikeDAO {
 	//상품인덱스에 따른 좋아요 
 	public List<Map<String, Object>> ProductIdxByLike() {
 		return my.selectList("productlike.productIdxByLike"); 
+
 	}
 	
 	

@@ -308,7 +308,7 @@ public class ProductListService {
 		 */
 		
 		
-		
+
 		//ArrayList 두 개를 가져와서 product_idx를 기준으로 likehceck만 갱신할 수 있도록 넣어준다. 
 		//MySQL 의 INT형 컬럼 데이터를 HashMap 타입으로 받아 java에서 사용하려고 할때 오류 발생 String.valueOf로 해결. 
 		//Mybatis에서 int형 컬럼 데이터를 map으로 받을 때 자동으로 BigDecimal로 변환 시킴. 

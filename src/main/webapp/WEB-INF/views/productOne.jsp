@@ -186,8 +186,9 @@ $('#deleteBtn').click(function() {
 	
 	
 	
-	
-}); //$
+
+}); 
+
 
 </script>
 </head>
@@ -214,6 +215,7 @@ $('#deleteBtn').click(function() {
 	      	 <div>수정일:${one.product_mdfydate} </div>
 		      	 
 		      	 <button>바로구매</button> 
+
 		      	 
 		      	 
 		      	 
@@ -241,7 +243,7 @@ $('#deleteBtn').click(function() {
 		      	 
 		      	 
 		      	 
-		      	 
+
 		      	 <button id = "add">장바구니</button> 
 		      	 <button><a href="reviewList.jsp?product_idx=${one.product_idx}">리뷰 보기</a></button>
 		     <!-- 카테고리, 좋아요, 작업 이후에  구현되도록 수정할 것. -->

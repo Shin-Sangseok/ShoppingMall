@@ -42,7 +42,7 @@ public class LikeController {
 		
 		return 0;
 	}
-	
+
 	@RequestMapping("selectMemberLikeOne")
 	public LikeVO selectOneLike(Model model,LikeVO vo) {
 		

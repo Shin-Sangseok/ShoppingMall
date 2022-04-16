@@ -35,7 +35,6 @@
 	from productlike 
 		group by product_idx , likecheck 
 		having product_idx <=20
-	
 	 -->
   
   <!-- member가 빈 하트에서 버튼을 누르면 속이 찬 하트로 바뀌면서 데이터값이 들어감. -->
@@ -68,6 +67,7 @@
    where 	
  		user_id = 'aaabbb' and 
   		product_idx = 4
+
    -->	
   
   <delete id = "deleteMemberLike" parameterType="likeVO">
@@ -92,10 +92,7 @@
 	limit 0, 10
   </select>
   
-  
-  
-  
-  	
+
   
 
 

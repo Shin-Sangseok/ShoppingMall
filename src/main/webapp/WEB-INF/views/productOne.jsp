@@ -122,7 +122,7 @@ $('#deleteBtn').click(function() {
 					$('#likebtn').attr('class', 'btn btn-danger'); 
 				}else{
 					console.log('이전에 좋아요를 누르지 않았음.')
-					$('#likecheck').val(0); 
+					$('#likecheck').val(''); 
 					$('#likebtn').attr('class', 'btn btn-light'); 
 				}
 				
@@ -153,7 +153,73 @@ $('#deleteBtn').click(function() {
 				})
 			}) 
 		
-		
+			  $(function(){
+				 $("#likebtn").on("click",function(){ 
+					//alert('test..')
+					$.ajax({
+						url : "likeCheckRevert", 
+						type:'put', 
+						data:{
+							user_id: '${user_id}',
+							product_idx : ${one.product_idx}
+						},
+						success: function(result){
+							console.log(location.reload )
+							  if (self.name != 'reload') {
+							         self.name = 'reload';
+							         self.location.reload(true);
+							     }
+							     else self.name = ''; 
+							
+						},
+						error: function() {
+							console.log(location.reload )
+							
+							  if (self.name != 'reload') {
+							         self.name = 'reload';
+							         self.location.reload(true);
+							     }
+							     else self.name = ''; 
+							
+							
+						}
+					
+					})
+				 })
+			})  
+				
+			
+			
+			 $(function(){
+				 $("#likebtn").on("click",function(){ 
+				//alert('test..')
+				$.ajax({
+					url : "likeCheckInsert", 
+					data:{
+						user_id: '${user_id}',
+						product_idx : ${one.product_idx}
+					},
+					success: function(result){
+						console.log('likeInsert 성공')
+						 /* if (self.name != 'reload') {
+					         self.name = 'reload';
+					         self.location.reload(true);
+					     }
+					     else self.name = '';  */
+					},
+					error: function() {
+						console.log('likeInsert 실패')
+						/*  if (self.name != 'reload') {
+					         self.name = 'reload';
+					         self.location.reload(true);
+					     }
+					     else self.name = '';  */
+					}
+				
+				})
+				
+			 })
+		}) 
 		
 		
 		
@@ -294,10 +360,10 @@ $('#deleteBtn').click(function() {
 						if("${result}"==null){
 					%>
 								<button type = "button" id="likebtn" class="btn btn-light">♡</button>
-								<input type = "hidden" id="likecheck" value="${result}">  
+								<input type = "hidden" id="likeck" value="${result}">  
 					<%}else{ %>
 								<button type = "button" id="likebtn" class="btn btn-danger">❤</button>
-								<input type = "hidden" id="likecheck" value="${result}">
+								<input type = "hidden" id="likeck" value="${result}">
 		      	 	<%}%>
 		      	 
 		      	 </div> 

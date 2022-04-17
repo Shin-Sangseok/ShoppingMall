@@ -122,7 +122,9 @@ $('#deleteBtn').click(function() {
 					$('#likebtn').attr('class', 'btn btn-danger'); 
 				}else{
 					console.log('이전에 좋아요를 누르지 않았음.')
+
 					$('#likecheck').val(''); 
+
 					$('#likebtn').attr('class', 'btn btn-light'); 
 				}
 				
@@ -153,6 +155,7 @@ $('#deleteBtn').click(function() {
 				})
 			}) 
 		
+
 			  $(function(){
 				 $("#likebtn").on("click",function(){ 
 					//alert('test..')
@@ -220,14 +223,6 @@ $('#deleteBtn').click(function() {
 				
 			 })
 		}) 
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		//에러를 찾기 위함. 
@@ -367,13 +362,12 @@ $('#deleteBtn').click(function() {
 		      	 	<%}%>
 		      	 
 		      	 </div> 
+
+		      	 
+		      	 </div> 
 		      	 
 		      	 
-		      	 
-		      	 
-		      	 
-		      	 
-		      	 
+	    
 		      	 <button>바로구매</button> 
 		      	 <button id = "add">장바구니</button> 
 		      	 <button><a href="reviewList.jsp?product_idx=${one.product_idx}">리뷰 보기</a></button>

@@ -52,11 +52,13 @@ public class LikeDAO {
 		return my.selectList("productlike.productIdxByLike"); 
 	}
 	
+
 	//좋아요 숫자 1 count 
     public int selectOneLikeCount(Map<String, Object> paramMap) {
     	System.out.println("selectOneLike paramMap"+paramMap);
 		return my.selectOne("productlike.selectOneLikeCount", paramMap); 
     }
+
     
     //좋아요 되돌리기 
     public int memberLikeRevert(Map<String,Object> paramMap) {
@@ -69,6 +71,7 @@ public class LikeDAO {
     	System.out.println("memberLikeRevert paramMap"+paramMap);
     	return my.selectOne("productlike.insertMemberLike", paramMap); 
     }
+
 	
 	
 	

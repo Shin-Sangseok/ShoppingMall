@@ -66,6 +66,7 @@ public class LikeController {
 		return result;
 	}
 	
+
 	@SuppressWarnings("null")
 	@PutMapping("likeCheckRevert")
 	public int memberLikeRevert(Model model,String user_id, Integer product_idx) {
@@ -116,7 +117,7 @@ public class LikeController {
 		
 		return result;
 	}
-	
+
 	
 	
 	@RequestMapping("createMemberLike")

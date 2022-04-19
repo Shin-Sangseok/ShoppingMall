@@ -326,6 +326,7 @@ $('#deleteBtn').click(function() {
 });
  */
 
+
  		//서버가 작동할 떄 
  		//JAVA>JSTL>HTML>Javascript순으로 작동하기 떄문에 
  		//Javascript에서는 jstl이나 태그의 값을 다루는데에 제한적일 수 밖에 없다. 
@@ -336,10 +337,12 @@ $('#deleteBtn').click(function() {
 		function total(){
 			
 		
+
 		 var p_price1 =  document.getElementById("p_price1").value; 
 		 var p_num1 = document.getElementById("p_num1").value;
 		 var total = p_price1 * p_num1 
 		 console.log(total); 
+
 		 
 		 
 		 //파라미터를 넘길 때 &구분자를 기준으로 인식하기 때문에 잊지않고 꼭 써주기. 
@@ -348,6 +351,7 @@ $('#deleteBtn').click(function() {
 				 +"&product_title="+'<c:out value="${one.product_title}"/>'
 				 +"&product_idx="+'<c:out value="${one.product_idx}"/>'+"&p_num1="+p_num1+"&product_img="+'<c:out value="${one.product_img}"/>'; 
     	}
+
 
 
 
@@ -425,7 +429,9 @@ $('#deleteBtn').click(function() {
                              <input type="text" name="p_num1" id="p_num1" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(1);">
                             </div>
                         </div>
+
                        	구매 시 버튼 클릭:<button onclick="total()"><div id = "sum" class="sum">total</div></button>
+
                     </div> 	 
 		      	 
 		      	 

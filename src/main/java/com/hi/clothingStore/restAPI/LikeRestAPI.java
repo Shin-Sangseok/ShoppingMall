@@ -57,6 +57,7 @@ public class LikeRestAPI {
 		
 	}
 	
+
 	@GetMapping("myProductLike")
 	@ResponseBody
 	public List<Map<String,Object>> selectProductMyLike(Model model,String user_id) {
@@ -76,13 +77,5 @@ public class LikeRestAPI {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

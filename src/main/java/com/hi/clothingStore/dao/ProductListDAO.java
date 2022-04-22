@@ -69,6 +69,7 @@ public class ProductListDAO {
     
     public MemberVO getMemberLevel(String user_id) {
     	System.out.println("ProductList의 getMemberLevel user_id"+user_id);
+
     	
     	if(user_id==null) {
     	 user_id = ""; 	
@@ -80,5 +81,6 @@ public class ProductListDAO {
     	
     	
     	}
+
 	
 }

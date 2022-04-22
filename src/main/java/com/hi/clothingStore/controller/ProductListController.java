@@ -53,7 +53,9 @@ public class ProductListController {
 		System.out.println("ProductlistController vo2:"+vo2);
 		ProductListVO2 vo3 = dao.productOne(vo2);
 		
+
 		MemberVO getuserLevel = dao.getMemberLevel(user_id);
+
 		//MemberVO [user_id=null, user_pw=null, user_name=null, user_age=0, user_tel=null, user_tag=null, user_addr=null, level=2] 
 
 		//if(getuserLevel.getLevel()!="") {

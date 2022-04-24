@@ -125,7 +125,7 @@ img{display:block;}
 		</c:forEach>
 		
 		</select>
-    <button type="submit"> 검색</button>
+    <button type="submit" class="btn btn-light"> 검색</button>
 </form>    
     
 <form id = "productForm" action="${pageContext.request.contextPath}/productList" method ="get"> 
@@ -133,7 +133,7 @@ img{display:block;}
            <!--  <h4>What We Do</h4> -->
             <h4><label for = "searchWord">apperal name</label></h4> 
 	<input name = "searchWord" type = "text">
-	<button type="submit"> 검색</button>
+	<button type="submit" class="btn btn-light"> 검색</button>
 </form>    
     
 </section>

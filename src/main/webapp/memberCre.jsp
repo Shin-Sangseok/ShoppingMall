@@ -223,7 +223,7 @@
 			<tr>
 				<td class="left">주소</td>
 				<td class="right"><input class="form-control input-lg"
-					type="text" name="user_addr" id="addr" placeholder="주소를 입력해주세요" value="서울특별시 종로구 342-12">
+					type="text" name="user_addr" id="addr" placeholder="주소를 입력해주세요">
 					<div id="addrc"></div></td>
 			</tr>
 			<tr>
